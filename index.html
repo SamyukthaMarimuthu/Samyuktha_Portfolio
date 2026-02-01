@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samyuktha M - Portfolio</title>
+    <title>Samyuktha M | Portfolio</title>
 
     <meta name="description" content="Portfolio of Samyuktha M - Textile Technologist">
     <meta name="author" content="Samyuktha M">
 
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <!-- Navigation -->
 <nav class="navbar">
-    <div class="container">
+    <div class="container nav-wrapper">
         <h2 class="nav-brand">Samyuktha M</h2>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 </nav>
 
@@ -27,26 +35,149 @@
 <section class="hero">
     <div class="container hero-wrapper">
 
-        <!-- Text Content -->
         <div class="hero-content">
             <p class="hero-greeting">Hello, I'm</p>
             <h1 class="hero-name">Samyuktha M</h1>
             <p class="hero-title">B.Tech Textile Technology Student</p>
             <p class="hero-description">
-                Aspiring Textile Technologist passionate about modern textile technologies 
+                Aspiring Textile Technologist passionate about modern textile technologies
                 and sustainable processing methods.
             </p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">Contact Me</a>
+                <a href="#projects" class="btn outline">View Projects</a>
+            </div>
         </div>
 
-        <!-- Profile Image -->
         <div class="profile-picture-wrapper">
-            <div class="profile-picture">
-                <img src="Samyuktha_M.jpeg" id="profileImage" alt="Samyuktha M">
-            </div>
+            <img src="Samyuktha_M.jpeg" alt="Samyuktha M">
         </div>
 
     </div>
 </section>
 
+<!-- About -->
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">Objective</h2>
+        <p class="section-text">
+            Aspiring Textile Technologist with an interest in modern textile technologies
+            and sustainable processing methods. A quick learner and team player,
+            eager to support innovation and environmentally responsible textile solutions.
+        </p>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section light">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+            <h3>B.Tech – Textile Technology</h3>
+            <p>Kumaraguru College of Technology</p>
+            <p>2023 – 2027</p>
+            <p><strong>CGPA:</strong> 8.8</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h4>Technical Skills</h4>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>HTML</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h4>Soft Skills</h4>
+                <ul>
+                    <li>Active Listening</li>
+                    <li>Effective Communication</li>
+                    <li>Strong Writing Skills</li>
+                    <li>Leadership</li>
+                    <li>Team Collaboration</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section light">
+    <div class="container">
+        <h2 class="section-title">Project</h2>
+
+        <div class="card">
+            <h3>Non-Destructive Fabric Fingerprinting System</h3>
+            <p>
+                Designed and validated a non-invasive fabric characterization framework
+                using digital image processing for structural and surface analysis.
+            </p>
+            <ul>
+                <li>Automated yarn and pore detection</li>
+                <li>Quantified yarn crimp, texture, fabric type & defects</li>
+                <li>Foundation for AI-based textile testing</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Internship -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Internship</h2>
+        <div class="card">
+            <p>
+                Completed an 11-day internship at <strong>Bannari Amman Spinning Mill</strong>,
+                Weaving Division.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications -->
+<section class="section light">
+    <div class="container">
+        <h2 class="section-title">Certification</h2>
+        <div class="card">
+            <p>Mahatma Gandhi Merit Scholarship Award</p>
+        </div>
+    </div>
+</section>
+
+<!-- Languages -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Languages</h2>
+        <p>English, French</p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section dark">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <p>📞 8807184333</p>
+        <p>📧 samyukthamarimuthu6@gmail.com</p>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/samyuktha-m" target="_blank">LinkedIn</a>
+            <a href="https://github.com/SamyukthaMarimuthu" target="_blank">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
