@@ -3,181 +3,425 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samyuktha M | Portfolio</title>
-
-    <meta name="description" content="Portfolio of Samyuktha M - Textile Technologist">
+    <title>Samyuktha M - Textile Technologist | Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Samyuktha M - B.Tech Textile Technology student specializing in sustainable textile solutions and digital image processing">
+    <meta name="keywords" content="Textile Technology, Fabric Analysis, Sustainable Textiles, Portfolio">
     <meta name="author" content="Samyuktha M">
-
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Samyuktha M - Textile Technologist Portfolio">
+    <meta property="og:description" content="Passionate about modern textile technologies and sustainable processing methods">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="container nav-wrapper">
-        <h2 class="nav-brand">Samyuktha M</h2>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero">
-    <div class="container hero-wrapper">
-
-        <div class="hero-content">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-name">Samyuktha M</h1>
-            <p class="hero-title">B.Tech Textile Technology Student</p>
-            <p class="hero-description">
-                Aspiring Textile Technologist passionate about modern textile technologies
-                and sustainable processing methods.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#contact" class="btn primary">Contact Me</a>
-                <a href="#projects" class="btn outline">View Projects</a>
-            </div>
-        </div>
-
-        <div class="profile-picture-wrapper">
-            <img src="Samyuktha_M.jpeg" alt="Samyuktha M">
-        </div>
-
-    </div>
-</section>
-
-<!-- About -->
-<section id="about" class="section">
-    <div class="container">
-        <h2 class="section-title">Objective</h2>
-        <p class="section-text">
-            Aspiring Textile Technologist with an interest in modern textile technologies
-            and sustainable processing methods. A quick learner and team player,
-            eager to support innovation and environmentally responsible textile solutions.
-        </p>
-    </div>
-</section>
-
-<!-- Education -->
-<section id="education" class="section light">
-    <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="card">
-            <h3>B.Tech – Textile Technology</h3>
-            <p>Kumaraguru College of Technology</p>
-            <p>2023 – 2027</p>
-            <p><strong>CGPA:</strong> 8.8</p>
-        </div>
-    </div>
-</section>
-
-<!-- Skills -->
-<section id="skills" class="section">
-    <div class="container">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h4>Technical Skills</h4>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>HTML</li>
-                    <li>Python</li>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <h2>Samyuktha M</h2>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </div>
-
-            <div class="skill-card">
-                <h4>Soft Skills</h4>
-                <ul>
-                    <li>Active Listening</li>
-                    <li>Effective Communication</li>
-                    <li>Strong Writing Skills</li>
-                    <li>Leadership</li>
-                    <li>Team Collaboration</li>
-                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- Projects -->
-<section id="projects" class="section light">
-    <div class="container">
-        <h2 class="section-title">Project</h2>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <p class="hero-greeting fade-in">Hello, I'm</p>
+                    <h1 class="hero-name fade-in">Samyuktha M</h1>
+                    <p class="hero-title fade-in">B.Tech Textile Technology Student</p>
+                    <p class="hero-description fade-in">
+                        Aspiring Textile Technologist passionate about modern textile technologies 
+                        and sustainable processing methods. Quick learner and team player eager to 
+                        support innovation and environmentally responsible textile solutions.
+                    </p>
+                    <div class="hero-buttons fade-in">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-outline">View Projects</a>
+                    </div>
+                    <div class="hero-social fade-in">
+                        <a href="https://linkedin.com/in/samyuktha-m" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/SamyukthaMarimuthu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:samyukthamarimuthu6@gmail.com" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image fade-in">
+                    <div class="profile-wrapper">
+                        <div class="profile-picture">
+                            <img src="Samyuktha_M.jpeg" alt="Samyuktha M - Profile Picture" loading="lazy">
+                        </div>
+                        <div class="profile-decorations">
+                            <div class="decoration decoration-1"></div>
+                            <div class="decoration decoration-2"></div>
+                            <div class="decoration decoration-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="card">
-            <h3>Non-Destructive Fabric Fingerprinting System</h3>
-            <p>
-                Designed and validated a non-invasive fabric characterization framework
-                using digital image processing for structural and surface analysis.
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Aspiring Textile Technologist with a strong interest in modern textile technologies 
+                    and sustainable processing methods. I am a quick learner and dedicated team player, 
+                    eager to support innovation and environmentally responsible textile solutions that 
+                    contribute to a more sustainable future.
+                </p>
+                <p class="about-text">
+                    My academic journey has equipped me with both technical skills and soft skills essential 
+                    for success in the textile industry. I'm passionate about leveraging technology to solve 
+                    real-world challenges in fabric characterization and quality control.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
+                <div class="card-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <h3>Bachelor of Technology - Textile Technology</h3>
+                    <p class="institution">Kumaraguru College of Technology</p>
+                    <div class="education-details">
+                        <span class="duration">2023 - 2027</span>
+                        <span class="cgpa">CGPA: 8.8/10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-container">
+                
+                <!-- Technical Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Active Listening</span>
+                        <span class="skill-tag">Effective Communication</span>
+                        <span class="skill-tag">Strong Writing</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">English</span>
+                        <span class="skill-tag">French</span>
+                        <span class="skill-tag">Tamil</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Featured Project</h2>
+            <div class="project-showcase">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-badge">Research Project</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Non-Destructive Fabric Fingerprinting System</h3>
+                    <p class="project-description">
+                        Designed and validated a non-invasive fabric characterization framework utilizing 
+                        digital image processing for comprehensive structural and surface analysis.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Automated yarn and pore detection algorithms</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Quantified yarn crimp levels, fabric texture, type, and defects</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Demonstrated reliable and repeatable measurements</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Foundation for AI-based textile testing with reduced instrument dependency</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Image Processing</span>
+                        <span class="tech-tag">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience & Achievements</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Industrial Internship</h3>
+                            <span class="timeline-date">11 Days</span>
+                        </div>
+                        <p class="timeline-company">Bannari Amman Spinning Mill - Weaving Division</p>
+                        <p class="timeline-description">
+                            Gained hands-on experience in textile manufacturing processes, 
+                            understanding weaving operations, quality control procedures, 
+                            and industrial-scale production techniques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Merit Scholarship</h3>
+                            <span class="timeline-date">Academic Excellence</span>
+                        </div>
+                        <p class="timeline-company">Mahatma Gandhi Merit Scholarship Award</p>
+                        <p class="timeline-description">
+                            Recognized for outstanding academic performance and dedication to studies, 
+                            demonstrating consistent excellence in textile technology coursework.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">
+                I'm always interested in discussing textile technology, sustainable innovations, 
+                and collaboration opportunities. Feel free to reach out!
             </p>
-            <ul>
-                <li>Automated yarn and pore detection</li>
-                <li>Quantified yarn crimp, texture, fabric type & defects</li>
-                <li>Foundation for AI-based textile testing</li>
-            </ul>
+            
+            <div class="contact-grid">
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Email</h4>
+                        <a href="mailto:samyukthamarimuthu6@gmail.com">samyukthamarimuthu6@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Phone</h4>
+                        <a href="tel:+918807184333">+91 8807184333</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Location</h4>
+                        <p>Theni, Tamil Nadu, India</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="social-links">
+                <a href="https://linkedin.com/in/samyuktha-m" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/SamyukthaMarimuthu" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Internship -->
-<section class="section">
-    <div class="container">
-        <h2 class="section-title">Internship</h2>
-        <div class="card">
-            <p>
-                Completed an 11-day internship at <strong>Bannari Amman Spinning Mill</strong>,
-                Weaving Division.
-            </p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Samyuktha M. All rights reserved.</p>
+            <p class="footer-note">Designed & Developed with passion for textile innovation</p>
         </div>
-    </div>
-</section>
+    </footer>
 
-<!-- Certifications -->
-<section class="section light">
-    <div class="container">
-        <h2 class="section-title">Certification</h2>
-        <div class="card">
-            <p>Mahatma Gandhi Merit Scholarship Award</p>
-        </div>
-    </div>
-</section>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
-<!-- Languages -->
-<section class="section">
-    <div class="container">
-        <h2 class="section-title">Languages</h2>
-        <p>English, French</p>
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section dark">
-    <div class="container">
-        <h2 class="section-title">Contact</h2>
-
-        <p>8807184333</p>
-        <p>samyukthamarimuthu6@gmail.com</p>
-
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/samyuktha-m" target="_blank">LinkedIn</a>
-            <a href="https://github.com/SamyukthaMarimuthu" target="_blank">GitHub</a>
-        </div>
-    </div>
-</section>
-
-<script src="script.js"></script>
 </body>
 </html>
