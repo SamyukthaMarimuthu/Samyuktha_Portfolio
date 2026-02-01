@@ -1,37 +1,28 @@
-/* =========================
-   Smooth Scroll for Nav
-   ========================= */
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+/* ================================
+   SMOOTH SCROLLING (NAV LINKS)
+================================ */
+document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        const target = document.querySelector(targetId);
+        e.preventDefault();
 
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        if (!targetSection) return;
+
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const offsetTop = targetSection.offsetTop - navbarHeight;
+
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
     });
 });
 
-/* =========================
-   Mobile Menu Toggle (Safe)
-   ========================= */
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
-if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-}
-
-/* =========================
-   Active Nav Link on Scroll
-   ========================= */
+/* ================================
+   ACTIVE NAV LINK ON SCROLL
+================================ */
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -39,8 +30,10 @@ window.addEventListener('scroll', () => {
     let currentSection = '';
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 120;
-        if (scrollY >= sectionTop) {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollY >= sectionTop - 120) {
             currentSection = section.getAttribute('id');
         }
     });
@@ -53,39 +46,15 @@ window.addEventListener('scroll', () => {
     });
 });
 
-/* =========================
-   Profile Image Upload (Optional)
-   ========================= */
-const imageInput = document.getElementById('imageUpload');
-const profileImage = document.getElementById('profileImage');
+/* ================================
+   NAVBAR SHADOW ON SCROLL
+================================ */
+const navbar = document.querySelector('.navbar');
 
-if (imageInput && profileImage) {
-    imageInput.addEventListener('change', function () {
-        const file = this.files[0];
-        if (!file) return;
-
-        if (!file.type.startsWith('image/')) {
-            alert('Please upload a valid image file');
-            return;
-        }
-
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            profileImage.src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-    });
-}
-
-/* =========================
-   Skill Bar Animation on Load
-   ========================= */
-window.addEventListener('load', () => {
-    document.querySelectorAll('.skill-progress').forEach(bar => {
-        const width = bar.style.width;
-        bar.style.width = '0';
-        setTimeout(() => {
-            bar.style.width = width;
-        }, 300);
-    });
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
+    } else {
+        navbar.style.boxShadow = '0 1px 0 rgba(0, 0, 0, 0.05)';
+    }
 });
